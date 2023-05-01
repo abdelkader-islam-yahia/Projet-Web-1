@@ -1,0 +1,422 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding:48px;
+}
+/* Corps de la Page*/
+body{
+  margin:0px;
+  background-color:#0c1319;
+  color: #fe4554;
+  font-family: 'Anton', sans-serif;
+  font-weight: lighter;
+}
+/* Barre de Navigations*/
+nav{
+  position: sticky;
+  top: 0px;
+  margin-top: 3px;
+  display: flex;
+  color: #081316;
+  text-align: center;
+  justify-content:space-around;
+  background-color: #fe4554;
+  height: 45px;
+  list-style-type: none;
+  z-index: 150;
+
+}
+
+ul {
+  position: sticky;
+  top: 40px;
+  width: -1%;
+}
+
+nav ul li{
+  float:left;
+  justify-content: space-evenly;
+  align-content: space-around;
+  background-color:#fe4554;
+  width:25;
+  height:25;
+
+
+}
+/* Les liens cliquables*/
+
+a:active,ul a{
+  color:#081316 ;
+  text-decoration: none
+}
+
+a:visited,ul a{
+  color: #081316;
+  text-decoration: none;
+}
+
+nav ul li a:active,nav ul li a:visited{
+  color: #081316 ;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content:center;
+  color:#081316  ;
+  text-align: center;
+  padding: 7px 43px;
+}
+/* Taille et modifs des H*/
+h1{
+  margin: 0px;
+  text-align:center;
+  color: #fe4554;
+}
+
+h3{
+  font-size: 18px;
+
+}
+h4{
+  font-size: 15px;
+
+}
+
+h5{
+  font-size: 12px;
+  color: #fe4554
+}
+/* Introduction de la page*/
+.intro{
+  background-image: url("../img/fond d_ecran.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.intro .description{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.intro .description p{
+  width: 16%;
+  font-size: 140%;
+}
+
+.intro .trailer{
+  position: fixed;
+  display: block;
+  float: inherit;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#intros .trailer iframe{
+  width:360px;
+  height:240px;
+  border: none;
+}
+
+/* Les regles et assets*/
+#regle .gameplay .video iframe{
+  width:360px;
+  height:240px;
+  border: none;
+}
+#regle h2 {
+  text-align: center;
+  background-color: #fe4554;
+  color: #081316;
+  margin-top: 0;
+
+}
+.rules {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.rules h4 a{
+  color: #fe4554;
+}
+.rules .agents h5{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.rules .agents{
+  text-align: center;
+  width: 30%;
+}
+
+.rules .agents .controllers .controllers_agents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rules .agents .controllers .controllers_agents .character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .agents .duellists .duellists_agents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rules .agents .duellists .duellists_agents .character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .agents .initiators .initiators_agents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rules .agents .initiators .initiators_agents .character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .agents .sentinels .sentinels_agents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rules .agents .sentinels .sentinels_agents .character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .maps img {
+  width: 40%;
+}
+
+.rules .maps h5{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.rules .maps {
+  text-align: center;
+  width: 49%;
+}
+
+.rules .maps .map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .weapons img {
+  width: 100%;
+}
+
+.rules .weapons {
+  text-align: center;
+  width: 30%;
+}
+
+.rules .weapons .sidearms .sidearms_weapons {
+  display: flex;
+  justify-content: center;
+}
+
+.rules .weapons .sidearms .sidearms_weapons .weapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .weapons .submachineguns .submachinesguns_weapons {
+  display: flex;
+  justify-content: center;
+}
+
+.rules .weapons .submachineguns .submachinesguns_weapons .weapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .weapons .shotguns .shotguns_weapons {
+  display: flex;
+  justify-content: center;
+}
+
+.rules .weapons .shotguns .shotguns_weapons .weapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .weapons .rifles .rifles_weapons {
+  display: flex;
+  justify-content: center;
+}
+
+.rules .weapons .rifles .rifles_weapons .weapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .weapons .sniper_rifles .sniper_rifles_weapons {
+  display: flex;
+  justify-content: center;
+}
+
+.rules .weapons .sniper_rifles .sniper_rifles_weapons .weapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules .weapons .machine_guns .machine_guns_weapons {
+  display: flex;
+  justify-content: center;
+}
+
+.rules .weapons .machine_guns .machine_guns_weapons .weapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3:active,a{
+  color:#fe4554 ;
+  text-decoration: none;
+}
+h3:visited, a{
+  color: #fe4554;
+  text-decoration: none;
+}
+
+/* Les actus et gameplay du jeux*/
+.gameplay{
+  display: inline-block;
+  align-items: normal;
+  margin-left: 31%;
+}
+.gameplay h3{
+  text-align: center;
+}
+.news{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.news h3 a{
+  font-size: 24px;
+  text-align: inherit;
+  text-decoration: underline;
+  color: #fe4554;
+}
+
+.news p{
+  font-size: 16px;
+  font-family:serif;
+  text-align: center;
+}
+#actus p{
+  color: #FFFF;
+}
+#actus h2 {
+  text-align: center;
+  background-color: #fe4554;
+  color: #081316;
+  margin-top: 0;
+
+}
+.news .actu-1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.news .actu-2{
+  display: flex;
+  justify-content: space-between;
+}
+.news .actu-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Formulaire de contact*/
+#formulaire h2 {
+  text-align: center;
+  background-color: #fe4554;
+  color: #081316;
+  margin-top: 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 30%;
+}
+
+label {
+  padding: 20px;
+  padding-left: 0px;
+}
+
+input {
+  height: 25px;
+}
+
+select {
+  height: 30px;
+}
+
+textarea {
+  height: 100px;
+  font-family: 'Anton', sans-serif;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  height: 40px;
+  margin: 25px;
+  margin-left: 0px;
+  width: 30%;
+}
+
+input[type=submit]:hover {
+  background-color: #fe4554;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: #081316;
+}
+
+/* Footer de page*/
+
+.footer-bar {
+  background-color: #fe4554;
+  width: 100%;
+}
+
+.footer-bar ul li img{
+  width:250px;
+  height:20px;
+}
